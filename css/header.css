@@ -1,0 +1,167 @@
+@font-face {
+  font-family: montserrat;
+  src: url(../fonts/montserrat/static/Montserrat-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: montserrat1;
+  src: url(../fonts/montserrat/static/Montserrat-Light.ttf);
+  font-weight: 200;
+}
+
+.siteheader {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: white;
+}
+
+.headermain {
+  display: flex;
+  max-width: 1000px;
+  margin: auto;
+  padding-top: 40px;
+  position: relative;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger span {
+  display: block;
+  width: 26px;
+  height: 3px;
+  margin: 5px 0;
+  background-color: black;
+  transition: 0.3s;
+}
+
+.headertitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  padding-top: 10px;
+}
+
+.allan a {
+  font-family: montserrat;
+  font-size: 20px;
+  color: black;
+  letter-spacing: 0.2em;
+  line-height: 2;
+}
+
+.Personal a {
+  font-family: montserrat1;
+  font-size: 14px;
+  color: black;
+  padding-left: 30px;
+  letter-spacing: 0.1em;
+}
+
+.navigacia {
+  color: black;
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  align-items: center;
+  padding-bottom: 30px;
+
+}
+
+.navtext {
+  font-family: montserrat1;
+  font-size: 15px;
+  color: black;
+}
+
+.loginicon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: auto;
+  min-height: 90px;
+  white-space: nowrap;
+  margin-left: 40px;
+  border: none;
+  background-color: white;
+
+}
+
+.panel {
+  position: sticky;
+  top: 0;
+}
+
+@media (max-width: 960px) {
+  .headertitle {
+    width: 100%;
+    text-align: center;
+  }
+
+  .burger {
+    display: block;
+    z-index: 1001;
+    padding-bottom: 40px;
+  }
+
+  .navigacia {
+    position: fixed;
+    top: 0;
+    right: -75%;
+    width: 45%;
+    height: 100vh;
+    background: white;
+    flex-direction: column;
+    padding-top: 100px;
+    gap: 20px;
+    transition: right 0.3s ease;
+    z-index: 1;
+  }
+
+  #menu-toggle:checked~nav .navigacia {
+    right: 0;
+  }
+
+
+  #menu-toggle:checked+.burger span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 6px);
+  }
+
+  #menu-toggle:checked+.burger span:nth-child(2) {
+    opacity: 0;
+  }
+
+  #menu-toggle:checked+.burger span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+
+  .headermain {
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    font-size: 32px;
+    padding-left: 20px;
+  }
+}
+
+@media(max-width: 320px) {
+  .allan a {
+    font-size: 16px;
+  }
+}

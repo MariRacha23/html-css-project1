@@ -1,0 +1,190 @@
+@font-face {
+    font-family: montserrat;
+    src: url(../fonts/montserrat/static/Montserrat-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: montserrat1;
+    src: url(../fonts/montserrat/static/Montserrat-Light.ttf);
+    font-weight: 200;
+}
+
+.container {
+    background-image: url(../imgs/mountains-blue.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+}
+
+.header {
+    font-family: montserrat;
+    font-size: 42px;
+    color: black;
+    padding-top: 30px;
+    max-width: 950px;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainline {
+    border: none;
+    height: 1px;
+    background-color: black;
+    margin: 20px 0;
+    width: 50px;
+
+}
+
+
+input[type="radio"] {
+    display: none;
+}
+
+.tabs {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.tabs label {
+    cursor: pointer;
+    padding-bottom: 6px;
+    font-weight: 500;
+    color: #555;
+    position: relative;
+}
+
+#all:checked~.tabs label[for="all"],
+#personal:checked~.tabs label[for="personal"],
+#career:checked~.tabs label[for="career"] {
+    color: #000;
+}
+
+#all:checked~.tabs label[for="all"]::after,
+#personal:checked~.tabs label[for="personal"]::after,
+#career:checked~.tabs label[for="career"]::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background: #000;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 30px;
+    font-family: montserrat1;
+    font-size: 16px;
+    line-height: 2;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.time {
+    padding: 10px 0 10px;
+}
+
+.cardbtn {
+    background: #000;
+    border: none;
+    padding: 15px 30px;
+    width: 150px;
+    color: white;
+
+}
+
+.cardbtn:hover {
+    text-decoration: underline;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #eee;
+    text-align: center;
+    padding: 30px;
+    max-width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#personal:checked~.cards .career {
+    display: none;
+}
+
+#career:checked~.cards .personal {
+    display: none;
+}
+
+.mobileServices {
+    display: none;
+
+}
+
+.footerinfram {
+    width: 100%;
+    height: 600px;
+
+}
+
+@media (max-width: 960px) {
+    .services .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .header {
+        padding-left: 15px;
+    }
+
+}
+
+@media (max-width: 770px) {
+    .services .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .tabs {
+        display: none;
+    }
+
+    .mobileServices,
+    select {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        width: 280px;
+        height: 42px;
+        padding: 10px;
+        margin-bottom: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 320px) {
+    .tabs {
+        padding-left: 10px;
+    }
+
+    .footerinfram {
+        height: 1150px;
+    }
+
+}

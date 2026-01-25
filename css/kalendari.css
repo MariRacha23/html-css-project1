@@ -1,0 +1,283 @@
+@font-face {
+    font-family: montserrat;
+    src: url(../fonts/montserrat/static/Montserrat-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: montserrat1;
+    src: url(../fonts/montserrat/static/Montserrat-Light.ttf);
+    font-weight: 200;
+}
+
+.background {
+    background-image: url(../imgs/mountains-blue.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.container {
+    font-family: montserrat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    background-color: #fff;
+    color: #1a1a1a;
+    max-width: 1500px;
+}
+
+.calendarbox {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.bac {
+    color: rgb(42, 41, 41);
+    font-size: 20px
+}
+
+.Calendarhed {
+    max-width: 600px;
+}
+
+h1 {
+    font-family: montserrat;
+    font-size: 40px;
+    letter-spacing: 7px;
+    line-height: 1;
+    padding: 60px 0 30px;
+}
+
+.calendarText {
+    font-family: montserrat1;
+    font-size: 16px;
+    padding-bottom: 50px;
+}
+
+.booking-container {
+    width: 100%;
+    max-width: 850px;
+    border: none;
+    padding: 24px;
+
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -20px;
+    flex-wrap: wrap;
+}
+
+h2 {
+    font-family: montserrat1;
+    font-size: 20px;
+}
+
+.timezone-label {
+    font-family: montserrat1;
+    font-size: 14px;
+
+}
+
+.line {
+    border: 0;
+    border-top: 1px solid black;
+    margin-bottom: 25px;
+    margin-top: 35px;
+}
+
+.calendar-controls {
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    border: none;
+    background: none;
+    font-family: montserrat1;
+    font-size: 20px;
+    padding: 0 15px 20px;
+
+
+}
+
+.calendar-box {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.layout {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.calDay {
+    font-family: montserrat1;
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+.calendarnumb {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+.day {
+    text-align: center;
+    padding: 10px 0;
+    font-family: montserrat1;
+    font-size: 14px;
+    position: relative;
+    cursor: pointer;
+}
+
+.StartThu {
+    grid-column-start: 5;
+}
+
+.selectday {
+    background: black;
+    color: white;
+
+}
+
+.selectday:hover {
+    opacity: 0.5;
+}
+
+.day.hasDot::after {
+    content: '';
+    width: 4px;
+    height: 4px;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.day.disabled {
+    opacity: 0.5;
+}
+
+.time-box {
+    font-family: montserrat1;
+    font-size: 20px;
+}
+
+.choose {
+    font-family: montserrat1;
+    color: white;
+    background: black;
+    cursor: pointer;
+    padding: 10px 0;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.mainfooter {
+    font-family: montserrat1;
+    max-width: 1000px;
+}
+
+.serdet {
+    padding-top: 50px;
+    font-size: 20px;
+}
+
+.mordet {
+    font-size: 15px;
+}
+
+.btnnext {
+    color: white;
+    background: black;
+    cursor: pointer;
+    padding: 10px 0;
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+    font-family: montserrat1;
+    font-size: 20px;
+    background: rgb(149, 146, 146);
+    border: none;
+}
+
+.footerinfram {
+    width: 100%;
+    height: 600px;
+
+}
+
+@media (max-width: 700px) {
+    .layout {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+
+    .header-section {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 350px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .calDay {
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+
+    .mobnone {
+        display: none;
+    }
+
+    .mobblac {
+        background: black;
+        color: white;
+    }
+
+    .day.dotwhit::after {
+        content: '';
+        width: 4px;
+        height: 4px;
+        background: white;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 4px;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+
+    .mainfooter {
+        margin-bottom: 20px;
+    }
+
+}
