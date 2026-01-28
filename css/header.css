@@ -11,18 +11,19 @@
 }
 
 .siteheader {
+  position: fixed;
   width: 100%;
+  height: auto;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 6;
   background: white;
 }
 
 .headermain {
   display: flex;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: auto;
-  padding-top: 40px;
   position: relative;
 }
 
@@ -33,6 +34,10 @@
 .burger {
   display: none;
   cursor: pointer;
+}
+
+.login {
+  font-size: 16px;
 }
 
 .burger span {
@@ -60,6 +65,19 @@
   line-height: 2;
 }
 
+.allan a:hover {
+  color: rgb(170, 217, 217);
+}
+
+.Personal a:hover {
+  color: rgb(170, 217, 217);
+}
+
+nav p:hover {
+  color: rgb(170, 217, 217);
+}
+
+
 .Personal a {
   font-family: montserrat1;
   font-size: 14px;
@@ -74,7 +92,7 @@
   gap: 30px;
   list-style: none;
   align-items: center;
-  padding-bottom: 30px;
+  padding: 10px 0 0 15px;
 
 }
 
@@ -85,41 +103,32 @@
 }
 
 .loginicon {
+
   display: flex;
+  width: 150px;
   align-items: center;
-  justify-content: center;
-  gap: 8px;
-  width: auto;
-  min-height: 90px;
-  white-space: nowrap;
-  margin-left: 40px;
   border: none;
   background-color: white;
 
 }
 
-.panel {
-  position: sticky;
-  top: 0;
-}
 
-@media (max-width: 960px) {
+@media (max-width: 1100px) {
   .headertitle {
     width: 100%;
-    text-align: center;
+    padding-left: 20px;
   }
 
   .burger {
     display: block;
-    z-index: 1001;
-    padding-bottom: 40px;
+    z-index: 5;
   }
 
   .navigacia {
     position: fixed;
     top: 0;
     right: -75%;
-    width: 45%;
+    width: 75%;
     height: 100vh;
     background: white;
     flex-direction: column;
@@ -127,6 +136,45 @@
     gap: 20px;
     transition: right 0.3s ease;
     z-index: 1;
+  }
+
+  .navline {
+    border-bottom: 1px solid black;
+    width: 180px;
+    height: 30px;
+    text-align: center;
+  }
+
+  .First {
+    order: 1;
+  }
+
+  .two {
+    order: 2;
+  }
+
+  .three {
+    order: 3;
+  }
+
+  .four {
+    order: 4;
+  }
+
+  .five {
+    order: 5;
+  }
+
+  .six {
+    order: 6;
+  }
+
+  .seven {
+    order: 7;
+  }
+
+  .eight {
+    order: 8;
   }
 
   #menu-toggle:checked~nav .navigacia {
@@ -147,9 +195,10 @@
   }
 
   .headermain {
-    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    padding: 0 20px;
   }
 }
 
@@ -164,4 +213,9 @@
   .allan a {
     font-size: 16px;
   }
+
+  .Personal a {
+    padding-left: 10px;
+  }
+
 }

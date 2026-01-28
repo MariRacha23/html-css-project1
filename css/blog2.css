@@ -1,0 +1,412 @@
+@font-face {
+    font-family: montserrat;
+    src: url(../fonts/montserrat/static/Montserrat-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: montserrat1;
+    src: url(../fonts/montserrat/static/Montserrat-Light.ttf);
+    font-weight: 200;
+}
+
+@keyframes heartBeat {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+.section1 {
+    background-image: url(../imgs/blogi.avif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+
+.titlebox {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.hadline {
+    border: none;
+    height: 2px;
+    background-color: black;
+    width: 50px;
+    margin-left: 0;
+    margin-bottom: 25px;
+}
+
+.title {
+    font-family: montserrat;
+    max-width: 320px;
+    font-size: 42px;
+    line-height: 1.2;
+    letter-spacing: 3px;
+
+}
+
+.section2 {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.section2main {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin-top: -300px;
+    background: white;
+    gap: 20px;
+}
+
+.card1,
+.card2 {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid rgb(199, 193, 193);
+    outline: none;
+}
+
+.imgcard1,
+.imgcard2 {
+    max-width: 480px;
+    max-height: 360px;
+}
+
+.information1 {
+    padding: 24px 45px;
+    max-width: 500px;
+}
+
+.admin1 {
+    display: flex;
+    gap: 15px;
+    font-family: montserrat1;
+    font-size: 12px;
+    line-height: 1.5;
+    padding-bottom: 20px;
+}
+
+h1 {
+    font-family: montserrat;
+    font-size: 28px;
+    padding-bottom: 20px;
+}
+
+.text1 {
+    font-family: montserrat1;
+    font-size: 16px;
+    line-height: 1.5;
+    padding-bottom: 90px;
+}
+
+.viewsbox {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgb(63, 62, 62);
+    padding-top: 15px;
+}
+
+.viewkoment {
+    display: flex;
+    font-family: montserrat1;
+    font-size: 12px;
+    gap: 10px;
+}
+
+.like-input {
+    display: none;
+}
+
+.colorchaing:hover {
+    color: #1b8279;
+}
+
+
+.heart-svg {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    fill: none;
+    stroke: rgb(243, 14, 14);
+    stroke-width: 2px;
+    transition: all 0.3s ease;
+}
+
+
+.heart-icon:hover .heart-svg {
+    transform: scale(1.2);
+}
+
+.like-input:checked+.heart-icon .heart-svg {
+    fill: #ff0000;
+    stroke: #ff0000;
+    animation: heartBeat 0.3s linear;
+}
+
+.like-count {
+    font-size: 14px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 50px 0;
+    font-family: montserrat1;
+}
+
+.pagination a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.pages {
+    display: flex;
+    gap: 15px;
+}
+
+.page-num {
+    padding: 5px 10px;
+}
+
+
+.page-num.active {
+    font-weight: bold;
+}
+
+.pagination a:hover {
+    color: #1b8279;
+}
+
+.arrow {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.mobversion {
+    display: none;
+}
+
+.footermaine {
+    background-color: rgb(105, 218, 214);
+    color: black;
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.footerline {
+    border: none;
+    height: 2px;
+    background-color: black;
+    width: 50px;
+    margin: 0 0 20px 0;
+}
+
+.contactinfo {
+    font-family: montserrat1;
+    font-size: 14px;
+    color: black;
+    letter-spacing: 0.1em;
+    line-height: 1.5;
+    text-align: start;
+    max-width: 300px;
+}
+
+h4 {
+    font-family: montserrat;
+    font-size: 24px;
+    color: black;
+    letter-spacing: 0.15em;
+    line-height: 1.2;
+    padding-bottom: 50px;
+}
+
+.contactdetails {
+    max-width: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+.socialicons {
+    display: flex;
+    gap: 20px;
+}
+
+.copyright {
+    padding-top: 60px;
+}
+
+.copyright1 {
+    display: none;
+}
+
+.wix {
+    font-family: montserrat1;
+    font-size: 12px;
+    color: black;
+    letter-spacing: 0.1em;
+    text-decoration: underline;
+}
+
+.contactForm {
+    max-width: 600px;
+}
+
+.formRow {
+    margin-bottom: 20px;
+}
+
+.twocols {
+    display: flex;
+    gap: 20px;
+}
+
+.formgroup {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+input,
+textarea {
+    padding: 15px;
+    border: 2px solid black;
+    background: transparent;
+    font-size: 16px;
+}
+
+.btn-dark1 {
+    padding: 15px 50px;
+    background: black;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-self: end;
+}
+
+@media(max-width:1025px) {
+
+    .section2,
+    .titlebox {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .imgcard1,
+    .imgcard2 {
+        max-width: 500px;
+    }
+}
+
+@media(max-width:960px) {
+    .footermaine {
+        flex-direction: column;
+        align-content: space-around;
+        gap: 50px;
+    }
+
+    .contactdetails {
+        align-items: start;
+    }
+
+    .copyright {
+        display: none;
+    }
+
+    .copyright1 {
+        display: block;
+        margin-top: 30px;
+        padding: 0px 10px;
+    }
+}
+
+@media(max-width:530px) {
+    .section1 {
+        height: 400px;
+    }
+
+    .section2,
+    .titlebox {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .section2main {
+        margin-top: 15px
+    }
+
+    .title {
+        font-size: 35px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .viewkoment {
+        display: none;
+    }
+
+    .mobversion {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+    }
+
+    .zero {
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 490px) {
+    .twocols {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 430px) {
+    .contactForm {
+        padding: 0px 15px;
+
+    }
+
+    .contactinfo {
+        padding-left: 15px;
+    }
+}
+
+@media(max-width: 320px) {
+    .submit button {
+        width: 280px;
+
+    }
+
+    .submittext {
+        padding-left: 80px;
+    }
+}

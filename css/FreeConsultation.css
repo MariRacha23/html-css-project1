@@ -38,6 +38,7 @@
     margin-top: 50px;
 }
 
+
 h1 {
     font-family: montserrat;
     font-size: 42px;
@@ -113,7 +114,7 @@ h2 {
 }
 
 .calendar-controls,
-button {
+.nav-arrow {
     display: flex;
     justify-content: space-between;
     max-width: 400px;
@@ -369,7 +370,11 @@ h4 {
     }
 }
 
-@media(max-width: 380px) {
+@media(max-width: 385px) {
+    .freeconsmain {
+        margin: 0 15px;
+    }
+
     h1 {
         font-size: 25px;
     }
@@ -384,5 +389,9 @@ h4 {
 
     .serchtim {
         max-width: 250px;
+    }
+
+    .freeconsmain {
+        padding: 0;
     }
 }

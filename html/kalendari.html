@@ -8,12 +8,112 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/kalendari.css">
     <link rel="stylesheet" href="../css/header.css">
-    <script src="../Header.js"></script>
+    <link rel="stylesheet" href="../css/footer.css">
 
 </head>
 
 <body>
+    <header class="siteheader">
+        <div class="headermain">
+            <div class="headertitle">
+                <div class="allan">
+                    <a href="../index.html">ALLAN JOHNSON</a>
+                </div>
+                <div class="Personal">
+                    <a href="../index.html">Personal Life Coach</a>
+                </div>
+            </div>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav>
+                <ul class="navigacia">
+                    <li class="two">
+                        <div class="navline">
+                            <a href="../index.html#about">
+                                <div class="navtext">
+                                    <p>About</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="three">
+                        <div class="navline">
 
+                            <a href="../html/services.html" target="_top">
+                                <div class="navtext">
+                                    <p>Services</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="four">
+                        <div class="navline">
+                            <a href="../html/plans.html">
+                                <div class="navtext">
+                                    <p>Plans</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="five">
+                        <div class="navline">
+                            <a href="../html/blog.html">
+                                <div class="navtext">
+                                    <p>Blog</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="six">
+                        <div class="navline">
+                            <a href="../html/guides.html">
+                                <div class="navtext">
+
+                                    <p>Guides</p>
+                                </div>
+                        </div>
+                        </a>
+                    </li>
+                    <li class="seven">
+                        <div class="navline">
+                            <a href="../html/contact.html">
+                                <div class="navtext">
+                                    <p> Contact</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="eight">
+                        <div class="navline">
+                            <a href="../html/members.html">
+                                <div class="navtext">
+                                    <p>Members</p>
+                                </div>
+                        </div>
+                        </a>
+                    </li>
+                    <li class="First">
+                        <a href="../html/log-in.html">
+                            <div class="navtext">
+                                <button class="loginicon">
+
+                                    <img src="../imgs/loginicone.png" alt="loginicon" width="40px%">
+                                    <span>Log in</span>
+
+                                </button>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+
+        </div>
+    </header>
     <main>
         <div class="background">
             <div class="container">
@@ -110,8 +210,85 @@
             </div>
         </div>
     </main>
-    <iframe class="footerinfram" src="../html/footer.html" frameborder="0"></iframe>
+    <footer id="contact">
+        <div class="footermaine">
+            <div class="contactinfo">
+                <div>
+                    <hr class="footerline">
+                    <h4>Contact</h4>
+                </div>
+                <div class="contactdetails">
+                    <p>500 Terry Francine Street,
+                        San Francisco, CA 94158</p>
 
+                    <p>Tel: 123-456-7890 </br>
+                        Fax: 123-456-7890</p>
+
+                    <p>info@mysite.com</p>
+                </div>
+                <div class="socialicons">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="../imgs/facebooc.avif" alt="facebooc" width="24px" height="24px">
+                    </a>
+                    <a href="https://x.com/" target="_blank">
+                        <img src="../imgs/twiter.avif" alt="twitter" width="24px" height="24px">
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="../imgs/insta.png" alt="instagram" width="24px" height="24px">
+                    </a>
+                    <a href="https://www.youtube.com/" target="_blank">
+                        <img src="../imgs/youtube.png" alt="linkedin" width="24px" height="24px">
+                    </a>
+                </div>
+                <div class="copyright">
+                    <p>© 2035 by Personal Life Coach. Powered and secured by <a class="wix"
+                            href="https://www.wix.com/">Wix</a></p>
+                </div>
+
+            </div>
+            <div class="formcontainer">
+                <form class="contactForm">
+                    <div class="formRow twocols">
+                        <div class="formgroup">
+                            <label>First Name *</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="formgroup">
+                            <label>Last Name *</label>
+                            <input type="text" required>
+                        </div>
+                    </div>
+                    <div class="formRow">
+                        <div class="formgroup">
+                            <label>Email *</label>
+                            <input type="email" required>
+                        </div>
+                    </div>
+                    <div class="formRow">
+                        <div class="formgroup">
+                            <label>Subject</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="formRow">
+                        <div class="formgroup">
+                            <label>Message</label>
+                            <textarea rows="4"></textarea>
+                        </div>
+                    </div>
+                    <div class="submit">
+                        <button type="submit" class="btn-dark">
+                            <p class="submittext">Submit</p>
+                        </button>
+                    </div>
+                </form>
+                <div class="copyright1">
+                    <p>© 2035 by Personal Life Coach. Powered and secured by <a class="wix" href="https://www.wix.com/"
+                            target="_blank">Wix</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
