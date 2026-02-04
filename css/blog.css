@@ -22,7 +22,7 @@
 
 .headermain {
     display: flex;
-    max-width: 1000px;
+    max-width: 1100px;
     margin: auto;
     position: relative;
 }
@@ -541,6 +541,9 @@ textarea {
 
     .eight {
         order: 8;
+    }
+    .nine{
+        order: 9;
     }
 
     #menu-toggle:checked~nav .navigacia {
